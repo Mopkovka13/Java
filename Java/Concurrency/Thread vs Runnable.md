@@ -2,7 +2,7 @@
 tags: [java, concurrency, thread, runnable]
 ---
 
-> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread cancellation]]
+> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread cancellation]] · аббревиатуры → [[Concurrency glossary]]
 
 # `extends Thread` vs `Runnable`
 

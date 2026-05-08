@@ -2,7 +2,7 @@
 tags: [java, concurrency, jmm, memory-barriers]
 ---
 
-> [[Index]] · рядом: [[volatile]] · [[happens-before]]
+> [[Index]] · рядом: [[volatile]] · [[happens-before]] · аббревиатуры → [[Concurrency glossary]]
 
 # Memory barriers
 

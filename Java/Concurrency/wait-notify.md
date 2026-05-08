@@ -2,7 +2,7 @@
 tags: [java, concurrency, wait, notify, synchronized]
 ---
 
-> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread cancellation]] · [[happens-before]]
+> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread cancellation]] · [[happens-before]] · аббревиатуры → [[Concurrency glossary]]
 
 # `wait` / `notify`
 

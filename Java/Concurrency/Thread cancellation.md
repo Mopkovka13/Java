@@ -2,7 +2,7 @@
 tags: [java, concurrency, interrupt, cancellation]
 ---
 
-> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread vs Runnable]] · [[wait-notify]]
+> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread vs Runnable]] · [[wait-notify]] · аббревиатуры → [[Concurrency glossary]]
 
 # Отмена потока
 

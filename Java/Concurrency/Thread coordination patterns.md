@@ -2,7 +2,7 @@
 tags: [java, concurrency, patterns, signaling, moc]
 ---
 
-> [[Index]] · подтемы: [[wait-notify]] · [[Thread cancellation]] · [[Thread vs Runnable]]
+> [[Index]] · подтемы: [[wait-notify]] · [[Thread cancellation]] · [[Thread vs Runnable]] · аббревиатуры → [[Concurrency glossary]]
 
 # Координация потоков — обзор
 

@@ -2,7 +2,7 @@
 tags: [java, concurrency, jmm, happens-before]
 ---
 
-> [[Index]] · рядом: [[volatile]] · [[Memory barriers]] · [[wait-notify]]
+> [[Index]] · рядом: [[volatile]] · [[Memory barriers]] · [[wait-notify]] · аббревиатуры → [[Concurrency glossary]]
 
 # happens-before
 

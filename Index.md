@@ -17,20 +17,27 @@ tags: [index, moc]
 - [[GC fundamentals]] — reachability, GC Roots, tracing vs reference counting
 
 ### Language Core
+- [[Object methods]] — что наследуем от `Object` и что стоит переопределять
 - [[equals vs ==]] — identity vs equality, контракт `equals`/`hashCode`, String pool, Integer cache
+- [[clone и Cloneable]] — shallow/deep копии, почему дизайн сломан, чем заменять
 
 ### Collections
 - [[HashMap]] — структура, `put`/`get`, treeify, resize, многопоточка
 
 ### Concurrency
 
+- [[Concurrency cheatsheet]] — сводная таблица всех concurrent-сущностей
+- [[Concurrency glossary]] — расшифровки аббревиатур и терминов раздела
+
 **JMM / память**
 - [[happens-before]] — формальное правило видимости JMM, фундамент thread-safety
 - [[volatile]] — гарантии, piggy-backing, когда применять
 - [[Memory barriers]] — `LoadLoad`/`StoreStore`/`StoreLoad`/`LoadStore`, расстановка для volatile
+- [[CAS]] — compare-and-swap, ABA, lock-free базис атомиков и AQS
 
 **Координация / синхронизация**
 - [[Thread coordination patterns]] — обзор: способы ожидания, j.u.c.-примитивы
+- [[synchronized]] — гарантии, эволюция локов в HotSpot, bytecode
 - [[wait-notify]] — низкоуровневый шаблон + 4 классические ловушки
 - [[Double-checked locking]] — ленивый singleton, зачем тут volatile
 

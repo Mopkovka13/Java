@@ -2,7 +2,7 @@
 tags: [java, concurrency, volatile, jmm]
 ---
 
-> [[Index]] · рядом: [[happens-before]] · [[Memory barriers]] · [[Double-checked locking]] · [[wait-notify]]
+> [[Index]] · рядом: [[happens-before]] · [[Memory barriers]] · [[Double-checked locking]] · [[wait-notify]] · аббревиатуры → [[Concurrency glossary]]
 
 # `volatile`
 

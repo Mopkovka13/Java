@@ -2,7 +2,7 @@
 tags: [java, concurrency, patterns, dcl, singleton]
 ---
 
-> [[Index]] · рядом: [[volatile]] · [[happens-before]]
+> [[Index]] · рядом: [[volatile]] · [[happens-before]] · аббревиатуры → [[Concurrency glossary]]
 
 # Double-checked locking (DCL)
 
