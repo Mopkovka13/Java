@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "fae773d116345534",
+    "type": "split",
+    "children": [
+      {
+        "id": "6411d231726f709d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c2e23807de426c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Concurrency/Thread coordination patterns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Thread coordination patterns"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f019bb0ec23ca26",
+    "type": "split",
+    "children": [
+      {
+        "id": "5af52cf25c4669b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72cb7d5f331e8e48",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3592bdc9f50a5c38",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e20878ddaeae2162",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0b0947d4d3fc0aa9",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac54dda18898719f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c598a05d205a6a3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "88323b40134c13fe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b135db5837783359",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f3e851821db12ed6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "70e476ec322a5862",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "9c2e23807de426c6",
+  "lastOpenFiles": [
+    "Java/Concurrency/Thread cancellation.md",
+    "Java/Concurrency/Memory barriers.md",
+    "Java/Concurrency/happens-before.md",
+    "Java/Concurrency/Double-checked locking.md",
+    "Java/Concurrency/volatile.md",
+    "Index.md.tmp.25801.f612d8b1e2da",
+    "Java/Concurrency/happens-before.md.tmp.25801.9736377297ec",
+    "README.md",
+    "Java/Concurrency/happens-before.md.tmp.25801.400a0aa40f55",
+    "Java/Concurrency/Thread coordination patterns.md.tmp.25801.d18cf82060c7",
+    "Java/Concurrency/Thread vs Runnable.md",
+    "Java/Concurrency/Thread vs Runnable.md.tmp.25801.9f5b06a84988",
+    "Java/Concurrency/Thread cancellation.md.tmp.25801.0d75e4447d98",
+    "Java/Concurrency/wait-notify.md",
+    "Java/Concurrency/wait-notify.md.tmp.25801.299dfd0be475",
+    "Java/Concurrency/Double-checked locking.md.tmp.25801.52d360677b3a",
+    "Java/Concurrency/Memory barriers.md.tmp.25801.bd3f8a1b232e",
+    "Java/Concurrency/volatile.md.tmp.25801.fd67abde7d8e",
+    "Java/Concurrency/Thread coordination patterns.md",
+    "Java/JVM/JDK vs JRE vs JVM.md",
+    "CLAUDE.md",
+    "Index.md",
+    "Java/Collections/HashMap.md",
+    "CS/Data Structures/Red-black tree.md",
+    "Java/JVM/Memory playground.md",
+    "Java/JVM/Memory areas.md",
+    "Java/JVM/GC/GC fundamentals.md",
+    "Java/Language Core/equals vs ==.md",
+    "Java/01 - JVM Basics/Memory areas.md",
+    "Java/02 - Language Core/equals vs ==.md",
+    "Java/01 - JVM Basics/JDK vs JRE vs JVM.md",
+    "create a link.md",
+    "Java/01 - JVM Basics/Memory playground.md",
+    "Welcome.md"
+  ]
+}
