@@ -2,7 +2,7 @@
 tags: [java, core, clone, cloneable]
 ---
 
-> [[Index]] · рядом: [[Object methods]], [[equals vs ==]]
+> [Index](../../Index.md) · рядом: [Object methods](Object%20methods.md), [equals vs ==](equals%20vs%20==.md)
 
 # `clone()` и `Cloneable`
 

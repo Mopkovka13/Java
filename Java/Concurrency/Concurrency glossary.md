@@ -2,7 +2,7 @@
 tags: [java, concurrency, glossary, moc]
 ---
 
-> [[Index]] · сокращения и термины из всех заметок раздела Concurrency.
+> [Index](../../Index.md) · сокращения и термины из всех заметок раздела Concurrency.
 
 # Concurrency — глоссарий
 
@@ -10,41 +10,41 @@ tags: [java, concurrency, glossary, moc]
 
 | Сокр. | Полное | Что |
 |---|---|---|
-| **hb** | happens-before | сокращение в коде/тексте: «A hb B» = «A happens-before B»; см. [[happens-before]] |
-| **JMM** | Java Memory Model | формальная модель памяти Java; правила видимости и упорядоченности; см. [[happens-before]] |
+| **hb** | happens-before | сокращение в коде/тексте: «A hb B» = «A happens-before B»; см. [happens-before](happens-before.md) |
+| **JMM** | Java Memory Model | формальная модель памяти Java; правила видимости и упорядоченности; см. [happens-before](happens-before.md) |
 | **JLS** | Java Language Specification | спецификация языка |
-| **JVM** | Java Virtual Machine | виртуальная машина; см. [[JDK vs JRE vs JVM]] |
+| **JVM** | Java Virtual Machine | виртуальная машина; см. [JDK vs JRE vs JVM](../JVM/JDK%20vs%20JRE%20vs%20JVM.md) |
 | **JIT** | Just-In-Time compiler | runtime-компилятор bytecode → native в JVM (C1/C2/Graal) |
-| **GC** | Garbage Collector | сборщик мусора; см. [[GC fundamentals]] |
+| **GC** | Garbage Collector | сборщик мусора; см. [GC fundamentals](../JVM/GC/GC%20fundamentals.md) |
 | **HotSpot** | — | основная open-source реализация JVM от Oracle/OpenJDK |
 | **j.u.c.** | `java.util.concurrent` | пакет concurrent-примитивов и коллекций |
-| **AQS** | `AbstractQueuedSynchronizer` | базовый класс под `ReentrantLock`/`Semaphore`/`CountDownLatch` — состояние + FIFO-очередь, всё на [[CAS]] |
-| **CAS** | Compare-And-Swap | атомарная инструкция CPU «сравни и замени»; см. [[CAS]] |
+| **AQS** | `AbstractQueuedSynchronizer` | базовый класс под `ReentrantLock`/`Semaphore`/`CountDownLatch` — состояние + FIFO-очередь, всё на [CAS](CAS.md) |
+| **CAS** | Compare-And-Swap | атомарная инструкция CPU «сравни и замени»; см. [CAS](CAS.md) |
 | **LL/SC** | Load-Linked / Store-Conditional | пара инструкций ARM/Power, аналог CAS на слабых моделях |
-| **ABA** | A → B → A | значение успело смениться и вернуться — CAS этого не заметит; см. [[CAS]] |
-| **DCL** | Double-Checked Locking | паттерн ленивого singleton; см. [[Double-checked locking]] |
+| **ABA** | A → B → A | значение успело смениться и вернуться — CAS этого не заметит; см. [CAS](CAS.md) |
+| **DCL** | Double-Checked Locking | паттерн ленивого singleton; см. [Double-checked locking](Double-checked%20locking.md) |
 | **RMW** / **R-M-W** | Read-Modify-Write | трёхшаговая операция (`count++` = read+add+write); не атомарна без CAS/lock |
 | **R/W** | Read / Write | чтение / запись |
 | **CME** | `ConcurrentModificationException` | бросается fail-fast итераторами при модификации коллекции во время обхода |
 | **FIFO** | First-In First-Out | очередь в порядке поступления |
 | **TSO** | Total Store Ordering | сильная модель памяти x86: stores не реордерятся между собой, единственный реордер — load-after-store |
 | **NIO** | New I/O (`java.nio`) | non-blocking I/O API: каналы, селекторы, буферы |
-| **futex** | Fast Userspace muTEX | примитив ядра Linux для эффективной парковки потоков; на нём построен heavyweight lock в [[synchronized]] |
+| **futex** | Fast Userspace muTEX | примитив ядра Linux для эффективной парковки потоков; на нём построен heavyweight lock в [synchronized](synchronized.md) |
 | **mark word** | — | первые 64 бита заголовка объекта в HotSpot; хранят lock state, identity hash, GC age |
 
 ## Термины
 
 | Термин | Что |
 |---|---|
-| **happens-before** | hb — формальное правило JMM «A видно B»; см. [[happens-before]] |
-| **piggy-backing** | публикация обычных данных через единственный volatile-флаг (см. [[volatile]]) |
+| **happens-before** | hb — формальное правило JMM «A видно B»; см. [happens-before](happens-before.md) |
+| **piggy-backing** | публикация обычных данных через единственный volatile-флаг (см. [volatile](volatile.md)) |
 | **lock-free** | хотя бы один поток прогрессирует; конкретный может ретраить |
 | **wait-free** | каждый поток за конечное число шагов |
 | **weakly consistent iterator** | не кидает `CME`, но не гарантирует видимость свежих изменений |
 | **fail-fast iterator** | при модификации во время обхода кидает `CME` |
-| **spurious wakeup** | пробуждение `wait()` без `notify` — JVM имеет право; см. [[wait-notify]] |
-| **barging** | сторонний поток захватывает лок раньше notified; см. [[wait-notify]] |
-| **biased / lightweight / heavyweight lock** | три уровня локов в HotSpot; см. [[synchronized]] |
+| **spurious wakeup** | пробуждение `wait()` без `notify` — JVM имеет право; см. [wait-notify](wait-notify.md) |
+| **barging** | сторонний поток захватывает лок раньше notified; см. [wait-notify](wait-notify.md) |
+| **biased / lightweight / heavyweight lock** | три уровня локов в HotSpot; см. [synchronized](synchronized.md) |
 | **inflation** | переход lightweight → heavyweight при contention |
 | **store buffer** | очередь записей CPU перед коммитом в кеш |
-| **memory barrier / fence** | инструкция CPU, запрещающая реордеринг; см. [[Memory barriers]] |
+| **memory barrier / fence** | инструкция CPU, запрещающая реордеринг; см. [Memory barriers](Memory%20barriers.md) |

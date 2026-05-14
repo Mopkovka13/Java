@@ -2,7 +2,7 @@
 tags: [java, concurrency, cheatsheet, moc]
 ---
 
-> [[Index]] · аббревиатуры — [[Concurrency glossary]] · обзор всех concurrent-сущностей, детали в отдельных заметках.
+> [Index](../../Index.md) · аббревиатуры — [Concurrency glossary](Concurrency%20glossary.md) · обзор всех concurrent-сущностей, детали в отдельных заметках.
 
 # Concurrency — сводная таблица
 
@@ -10,11 +10,11 @@ tags: [java, concurrency, cheatsheet, moc]
 
 | Сущность | Даёт | Не даёт |
 |---|---|---|
-| [[happens-before]] | формальное правило видимости JMM | — |
-| [[volatile]] | видимость, hb, запрет реордера, атомарность одного R/W | атомарность RMW (`++`) |
+| [happens-before](happens-before.md) | формальное правило видимости JMM | — |
+| [volatile](volatile.md) | видимость, hb, запрет реордера, атомарность одного R/W | атомарность RMW (`++`) |
 | `final` | hb на завершение конструктора (если `this` не утёк) | — |
-| [[Memory barriers]] | LoadLoad/StoreStore/StoreLoad/LoadStore | — |
-| [[CAS]] | атомарный compare-and-set + видимость | защиту от ABA |
+| [Memory barriers](Memory%20barriers.md) | LoadLoad/StoreStore/StoreLoad/LoadStore | — |
+| [CAS](CAS.md) | атомарный compare-and-set + видимость | защиту от ABA |
 
 ## 2. Atomics (lock-free, на CAS)
 
@@ -35,7 +35,7 @@ tags: [java, concurrency, cheatsheet, moc]
 
 | Класс | Гарантии | Особенности |
 |---|---|---|
-| [[synchronized]] | mutex + reentrancy + visibility | biased→thin→fat, **не** interruptible, нет `tryLock` |
+| [synchronized](synchronized.md) | mutex + reentrancy + visibility | biased→thin→fat, **не** interruptible, нет `tryLock` |
 | `ReentrantLock` | то же | `lockInterruptibly`, `tryLock(timeout)`, fair, несколько `Condition` |
 | `ReentrantReadWriteLock` | разделение R/W | много readers ИЛИ один writer |
 | `StampedLock` (Java 8+) | + **optimistic read** | **не reentrant**, нет `Condition` |
@@ -98,8 +98,8 @@ tags: [java, concurrency, cheatsheet, moc]
 
 | Класс | Что даёт |
 |---|---|
-| `Thread` | низкоуровневый поток; см. [[Thread cancellation]] |
-| `Runnable` / `Callable<V>` | задача; см. [[Thread vs Runnable]] |
+| `Thread` | низкоуровневый поток; см. [Thread cancellation](Thread%20cancellation.md) |
+| `Runnable` / `Callable<V>` | задача; см. [Thread vs Runnable](Thread%20vs%20Runnable.md) |
 | `Thread.UncaughtExceptionHandler` | глобальный handler |
 
 ## Что выбирать

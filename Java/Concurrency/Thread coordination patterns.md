@@ -2,7 +2,7 @@
 tags: [java, concurrency, patterns, signaling, moc]
 ---
 
-> [[Index]] · подтемы: [[wait-notify]] · [[Thread cancellation]] · [[Thread vs Runnable]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · подтемы: [wait-notify](wait-notify.md) · [Thread cancellation](Thread%20cancellation.md) · [Thread vs Runnable](Thread%20vs%20Runnable.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # Координация потоков — обзор
 
@@ -15,7 +15,7 @@ tags: [java, concurrency, patterns, signaling, moc]
 | `while (!flag) {}` busy-wait | почти никогда — 100% CPU |
 | `while (!flag) Thread.onSpinWait()` | lock-free hot path, наносекунды |
 | `while (!flag) Thread.sleep(ms)` polling | редкие проверки, не критична латентность |
-| `wait`/`notify` ([[wait-notify]]) | низкоуровневая база, обычно скрыта |
+| `wait`/`notify` ([wait-notify](wait-notify.md)) | низкоуровневая база, обычно скрыта |
 | `j.u.c.`-примитивы (см. ниже) | **по умолчанию это** |
 
 ## `j.u.c.`-примитивы
@@ -41,7 +41,7 @@ ready.countDown();         // producer сигналит
 
 ## Связанные темы
 
-- [[wait-notify]] — низкоуровневые примитивы и их ловушки.
-- [[Thread cancellation]] — отмена через `interrupt()`.
-- [[Thread vs Runnable]] — почему `Runnable` + executor.
-- [[volatile]] — для простых флагов и публикации.
+- [wait-notify](wait-notify.md) — низкоуровневые примитивы и их ловушки.
+- [Thread cancellation](Thread%20cancellation.md) — отмена через `interrupt()`.
+- [Thread vs Runnable](Thread%20vs%20Runnable.md) — почему `Runnable` + executor.
+- [volatile](volatile.md) — для простых флагов и публикации.

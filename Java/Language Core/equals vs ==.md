@@ -2,7 +2,7 @@
 tags: [java, core, equals, hashcode]
 ---
 
-> [[Index]] · рядом: [[Memory areas]] (heap & String pool)
+> [Index](../../Index.md) · рядом: [Memory areas](../JVM/Memory%20areas.md) (heap & String pool)
 
 # `==` vs `equals` и контракт `equals`/`hashCode`
 

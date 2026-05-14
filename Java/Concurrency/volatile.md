@@ -2,7 +2,7 @@
 tags: [java, concurrency, volatile, jmm]
 ---
 
-> [[Index]] · рядом: [[happens-before]] · [[Memory barriers]] · [[Double-checked locking]] · [[wait-notify]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · рядом: [happens-before](happens-before.md) · [Memory barriers](Memory%20barriers.md) · [Double-checked locking](Double-checked%20locking.md) · [wait-notify](wait-notify.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # `volatile`
 
@@ -11,8 +11,8 @@ tags: [java, concurrency, volatile, jmm]
 | Гарантия | Что значит |
 |---|---|
 | Видимость | Запись из одного потока сразу видна другим |
-| [[happens-before]] | volatile write hb последующего volatile read той же переменной |
-| Запрет реордеринга | JIT/CPU не переставят инструкции через volatile-доступ ([[Memory barriers]]) |
+| [happens-before](happens-before.md) | volatile write hb последующего volatile read той же переменной |
+| Запрет реордеринга | JIT/CPU не переставят инструкции через volatile-доступ ([Memory barriers](Memory%20barriers.md)) |
 | Атомарность одного R/W | В т.ч. для `long`/`double` (без volatile они могут «порваться») |
 
 ## НЕ гарантирует
@@ -41,7 +41,7 @@ if (ready)           // (3) volatile read
 
 - ✅ Флаги (`shutdown`, `ready`, `initialized`).
 - ✅ Публикация неизменяемого объекта (`volatile Config config`).
-- ✅ [[Double-checked locking]] — обязателен.
+- ✅ [Double-checked locking](Double-checked%20locking.md) — обязателен.
 - ❌ Счётчики, аккумуляторы → `AtomicInteger` / `LongAdder`.
 - ❌ Группа полей, меняемая атомарно → `synchronized` / `Lock`.
 

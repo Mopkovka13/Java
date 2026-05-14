@@ -2,7 +2,7 @@
 tags: [java, jvm, memory, playground]
 ---
 
-> [[Index]] · рядом: [[Memory areas]] · [[JDK vs JRE vs JVM]]
+> [Index](../../Index.md) · рядом: [Memory areas](Memory%20areas.md) · [JDK vs JRE vs JVM](JDK%20vs%20JRE%20vs%20JVM.md)
 
 # Memory Playground — как пощупать память JVM
 

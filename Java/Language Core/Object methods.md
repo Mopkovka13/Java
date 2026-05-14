@@ -2,7 +2,7 @@
 tags: [java, core, object]
 ---
 
-> [[Index]] · рядом: [[equals vs ==]], [[wait-notify]], [[synchronized]]
+> [Index](../../Index.md) · рядом: [equals vs ==](equals%20vs%20==.md), [wait-notify](../Concurrency/wait-notify.md), [synchronized](../Concurrency/synchronized.md)
 
 # Методы `java.lang.Object`
 
@@ -13,7 +13,7 @@ tags: [java, core, object]
 | Метод | Назначение |
 |---|---|
 | `getClass()` | Рантайм-класс объекта. Для рефлексии и `equals` через `getClass() ==`. |
-| `notify()` / `notifyAll()` | Будят поток(и) на мониторе. Только из `synchronized`. См. [[wait-notify]]. |
+| `notify()` / `notifyAll()` | Будят поток(и) на мониторе. Только из `synchronized`. См. [wait-notify](../Concurrency/wait-notify.md). |
 | `wait()` / `wait(long)` / `wait(long,int)` | Освобождают монитор и ждут. Только из `synchronized`. |
 
 ## Переопределяемые
@@ -30,7 +30,7 @@ tags: [java, core, object]
 
 ```
 equals      → почти всегда для value-классов; никогда для сервисов
-hashCode    → только и всегда вместе с equals (см. [[equals vs ==]])
+hashCode    → только и всегда вместе с equals (см. [equals vs ==](equals%20vs%20==.md))
 toString    → почти всегда
 clone       → нет, заменяем copy-constructor / static factory / record
 finalize    → нет, заменяем AutoCloseable + try-with-resources / Cleaner
@@ -56,4 +56,4 @@ wait/notify → нельзя; в новом коде не вызываем (j.u.
 - Дефолтный `equals` = `==`, дефолтный `hashCode` ≠ полевой → объект «теряется» в `HashMap`/`HashSet`, если переопределить только один.
 - `clone()` объявлен в `Object`, но без `implements Cloneable` бросит `CloneNotSupportedException` — кривой контракт через маркерный интерфейс.
 - `finalize()` мог воскрешать объект, тормозил GC, исполнялся не гарантировано — отсюда полный отказ.
-- `wait()` без цикла `while(!condition)` ломается на spurious wakeup — см. [[wait-notify]].
+- `wait()` без цикла `while(!condition)` ломается на spurious wakeup — см. [wait-notify](../Concurrency/wait-notify.md).

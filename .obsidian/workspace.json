@@ -11,14 +11,10 @@
             "id": "9c2e23807de426c6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/Language Core/Object methods.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Object methods"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -180,20 +176,23 @@
       "bases:Create new base": false
     }
   },
-  "active": "9c2e23807de426c6",
+  "active": "72cb7d5f331e8e48",
   "lastOpenFiles": [
     "Java/Language Core/equals vs ==.md",
+    "GC algorithms.md",
+    "Java/Language Core/equals vs %3D%3D.md",
+    "Java/JVM/GC/GC fundamentals.md",
+    "CLAUDE.md.tmp.15338.8dc5a6445148",
+    "Java/Collections/HashMap.md",
+    "Java/Concurrency/wait-notify.md",
+    "Java/Language Core/Object methods.md",
     "Index.md.tmp.37763.38b2ab04901a",
     "Java/Language Core/clone и Cloneable.md",
     "Java/Language Core/clone и Cloneable.md.tmp.37763.1c65838cf309",
     "Index.md.tmp.37763.c26a19d21098",
-    "Java/Language Core/Object methods.md",
     "Java/Language Core/Object methods.md.tmp.37763.d56be6d52036",
-    "Java/Collections/HashMap.md",
     "Java/JVM/Memory areas.md",
     "Java/JVM/JDK vs JRE vs JVM.md",
-    "Java/JVM/GC/GC fundamentals.md",
-    "Java/Concurrency/wait-notify.md",
     "Java/Concurrency/Thread coordination patterns.md",
     "Java/Concurrency/Thread vs Runnable.md",
     "Java/Concurrency/Thread cancellation.md",
@@ -205,7 +204,6 @@
     "Java/Concurrency/Double-checked locking.md.tmp.25801.4d80ade75ae3",
     "Java/Concurrency/Thread vs Runnable.md.tmp.25801.98939dd76214",
     "Java/Concurrency/Thread cancellation.md.tmp.25801.fded234f31ec",
-    "Java/Concurrency/wait-notify.md.tmp.25801.59ce015cff19",
     "Java/Concurrency/CAS.md",
     "Java/Concurrency/Concurrency glossary.md",
     "Java/Concurrency/happens-before.md",
@@ -215,7 +213,6 @@
     "CLAUDE.md",
     "Index.md",
     "CS/Data Structures/Red-black tree.md",
-    "Java/JVM/Memory playground.md",
-    "Java/01 - JVM Basics/Memory areas.md"
+    "Java/JVM/Memory playground.md"
   ]
 }

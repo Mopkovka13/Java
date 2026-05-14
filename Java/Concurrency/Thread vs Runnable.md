@@ -2,7 +2,7 @@
 tags: [java, concurrency, thread, runnable]
 ---
 
-> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread cancellation]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · рядом: [Thread coordination patterns](Thread%20coordination%20patterns.md) · [Thread cancellation](Thread%20cancellation.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # `extends Thread` vs `Runnable`
 
@@ -28,7 +28,7 @@ Future<?> task = pool.submit(() -> {
     } catch (InterruptedException ignored) { }
 });
 
-task.cancel(true);   // под капотом — interrupt(), см. [[Thread cancellation]]
+task.cancel(true);   // под капотом — interrupt(), см. [Thread cancellation](Thread%20cancellation.md)
 pool.shutdown();
 ```
 

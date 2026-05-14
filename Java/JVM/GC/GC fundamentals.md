@@ -2,7 +2,7 @@
 tags: [java, jvm, gc]
 ---
 
-> [[Index]] · рядом: [[Memory areas]] · [[Generational hypothesis]] · [[GC algorithms]]
+> [Index](../../../Index.md) · рядом: [Memory areas](../Memory%20areas.md) · [Generational hypothesis](Generational%20hypothesis.md) · [GC algorithms](GC%20algorithms.md)
 
 # GC Fundamentals — зачем, что собирается и как определяется мусор
 
@@ -61,7 +61,7 @@ JVM использует **tracing** (mark-sweep подход). НЕ reference c
 
 Эмпирическое наблюдение: **большинство объектов умирают молодыми**. Кто пережил несколько сборок — почти наверняка проживёт долго.
 
-Отсюда вся архитектура HotSpot-GC: [[Generational hypothesis|Young/Old]], частые быстрые сборки в Young, редкие тяжёлые в Old.
+Отсюда вся архитектура HotSpot-GC: [Young/Old](Generational%20hypothesis.md), частые быстрые сборки в Young, редкие тяжёлые в Old.
 
 ## Гочи
 

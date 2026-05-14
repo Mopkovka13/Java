@@ -2,7 +2,7 @@
 tags: [java, jvm, memory]
 ---
 
-> [[Index]] · рядом: [[JDK vs JRE vs JVM]] · [[Memory playground]] · [[equals vs ==]] · [[GC fundamentals]]
+> [Index](../../Index.md) · рядом: [JDK vs JRE vs JVM](JDK%20vs%20JRE%20vs%20JVM.md) · [Memory playground](Memory%20playground.md) · [equals vs ==](../Language%20Core/equals%20vs%20==.md) · [GC fundamentals](GC/GC%20fundamentals.md)
 
 # Области памяти JVM
 

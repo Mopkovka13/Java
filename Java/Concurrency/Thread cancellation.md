@@ -2,7 +2,7 @@
 tags: [java, concurrency, interrupt, cancellation]
 ---
 
-> [[Index]] · рядом: [[Thread coordination patterns]] · [[Thread vs Runnable]] · [[wait-notify]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · рядом: [Thread coordination patterns](Thread%20coordination%20patterns.md) · [Thread vs Runnable](Thread%20vs%20Runnable.md) · [wait-notify](wait-notify.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # Отмена потока
 
@@ -83,6 +83,6 @@ static void safeJoin(Thread t) {
 
 ## Гочи
 
-- `Future.cancel(true)` под капотом — `interrupt()`. См. [[Thread vs Runnable]].
+- `Future.cancel(true)` под капотом — `interrupt()`. См. [Thread vs Runnable](Thread%20vs%20Runnable.md).
 - `volatile boolean stop` оправдан **только** в чисто CPU-bound цикле без блокировок.
 - Поток в `synchronized (lock)` блок **не реагирует** на interrupt. Используй `lock.lockInterruptibly()`.

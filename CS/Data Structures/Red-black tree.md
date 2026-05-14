@@ -2,7 +2,7 @@
 tags: [cs, data-structures, tree]
 ---
 
-> [[Index]] · используется в: [[HashMap]] (treeify-bin), TreeMap, TreeSet
+> [Index](../../Index.md) · используется в: [HashMap](../../Java/Collections/HashMap.md) (treeify-bin), TreeMap, TreeSet
 
 # Красно-чёрное дерево
 
@@ -31,7 +31,7 @@ tags: [cs, data-structures, tree]
 ## Где в JDK
 
 - `TreeMap`, `TreeSet` — всегда красно-чёрное дерево.
-- [[HashMap]] — бакет превращается в RB-tree при ≥ 8 коллизий и `table.length ≥ 64`. Требует `Comparable` ключи.
+- [HashMap](../../Java/Collections/HashMap.md) — бакет превращается в RB-tree при ≥ 8 коллизий и `table.length ≥ 64`. Требует `Comparable` ключи.
 - `ConcurrentHashMap` — аналогично.
 
 ## Альтернативы

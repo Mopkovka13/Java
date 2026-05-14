@@ -2,7 +2,7 @@
 tags: [java, concurrency, cas, atomic, lock-free]
 ---
 
-> [[Index]] · рядом: [[volatile]] · [[synchronized]] · [[happens-before]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · рядом: [volatile](volatile.md) · [synchronized](synchronized.md) · [happens-before](happens-before.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # CAS (compare-and-swap)
 
@@ -73,6 +73,6 @@ T1: CAS(head, A, B) ✅ успех — но stack = X, next у A больше н
 
 ## Гочи
 
-- CAS — **видимость** даёт автоматически (как [[volatile]]).
-- Под низкой конкуренцией CAS быстрее [[synchronized]]. Под высокой — может проиграть из-за retry storm.
+- CAS — **видимость** даёт автоматически (как [volatile](volatile.md)).
+- Под низкой конкуренцией CAS быстрее [synchronized](synchronized.md). Под высокой — может проиграть из-за retry storm.
 - `compareAndSet` возвращает `boolean` — забыл проверить = молча потерял запись.

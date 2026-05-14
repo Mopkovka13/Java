@@ -2,7 +2,7 @@
 tags: [java, jvm, basics]
 ---
 
-> [[Index]] · рядом: [[Memory areas]] · [[Memory playground]]
+> [Index](../../Index.md) · рядом: [Memory areas](Memory%20areas.md) · [Memory playground](Memory%20playground.md)
 
 # Путь от кода до исполнения
 

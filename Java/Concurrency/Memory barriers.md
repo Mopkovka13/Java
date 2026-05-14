@@ -2,7 +2,7 @@
 tags: [java, concurrency, jmm, memory-barriers]
 ---
 
-> [[Index]] · рядом: [[volatile]] · [[happens-before]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · рядом: [volatile](volatile.md) · [happens-before](happens-before.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # Memory barriers
 
@@ -31,4 +31,4 @@ tags: [java, concurrency, jmm, memory-barriers]
 
 ## Правило
 
-Думай в терминах [[happens-before]]-рёбер. Барьеры — деталь реализации JVM/CPU, как именно они обеспечивают hb.
+Думай в терминах [happens-before](happens-before.md)-рёбер. Барьеры — деталь реализации JVM/CPU, как именно они обеспечивают hb.

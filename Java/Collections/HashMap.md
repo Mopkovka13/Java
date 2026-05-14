@@ -2,7 +2,7 @@
 tags: [java, collections, hashmap]
 ---
 
-> [[Index]] · рядом: [[equals vs ==]] · [[Red-black tree]] · [[ConcurrentHashMap]]
+> [Index](../../Index.md) · рядом: [equals vs ==](../Language%20Core/equals%20vs%20==.md) · [Red-black tree](../../CS/Data%20Structures/Red-black%20tree.md) · [ConcurrentHashMap](ConcurrentHashMap.md)
 
 # HashMap
 
@@ -69,7 +69,7 @@ int bucket = (n - 1) & hash;                    // n — длина table
 |---|---|---|---|---|
 | `put`/`get` | O(1) | O(1) | O(n) | O(log n) |
 
-«Worst O(log n)» только если бакет уже стал [[Red-black tree|красно-чёрным деревом]].
+«Worst O(log n)» только если бакет уже стал [красно-чёрным деревом](../../CS/Data%20Structures/Red-black%20tree.md).
 
 ## Null
 
@@ -84,7 +84,7 @@ int bucket = (n - 1) & hash;                    // n — длина table
 
 | Класс | Когда |
 |---|---|
-| [[ConcurrentHashMap]] | стандартный выбор |
+| [ConcurrentHashMap](ConcurrentHashMap.md) | стандартный выбор |
 | `Collections.synchronizedMap` | один глобальный лок, медленно |
 | `Hashtable` | легаси, не используй |
 
@@ -95,7 +95,7 @@ int bucket = (n - 1) & hash;                    // n — длина table
 
 ## Гочи
 
-- `equals`/`hashCode` — фундамент. Нарушил [[equals vs ==|контракт]] → `get` теряет элемент.
+- `equals`/`hashCode` — фундамент. Нарушил [контракт](../Language%20Core/equals%20vs%20==.md) → `get` теряет элемент.
 - **Мутабельные ключи запрещены**. Поменял поле, входящее в `hashCode`, после `put` → `get` уйдёт в другой бакет.
 - Treeify нужен `Comparable`-ключи.
 - Capacity всегда округляется вверх до степени двойки.

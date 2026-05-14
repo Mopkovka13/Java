@@ -2,7 +2,7 @@
 tags: [java, concurrency, jmm, happens-before]
 ---
 
-> [[Index]] · рядом: [[volatile]] · [[Memory barriers]] · [[wait-notify]] · аббревиатуры → [[Concurrency glossary]]
+> [Index](../../Index.md) · рядом: [volatile](volatile.md) · [Memory barriers](Memory%20barriers.md) · [wait-notify](wait-notify.md) · аббревиатуры → [Concurrency glossary](Concurrency%20glossary.md)
 
 # happens-before
 
@@ -64,7 +64,7 @@ print(data);        // (4) → 42, гарантированно
 
 ## hb ≠ барьеры
 
-happens-before — абстракция спецификации. Как именно её обеспечить через [[Memory barriers]] — решает компилятор. Думай в терминах hb-рёбер, не инструкций CPU.
+happens-before — абстракция спецификации. Как именно её обеспечить через [Memory barriers](Memory%20barriers.md) — решает компилятор. Думай в терминах hb-рёбер, не инструкций CPU.
 
 ## `synchronized` через призму hb
 
