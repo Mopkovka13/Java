@@ -27,8 +27,11 @@
 | **Soft skills** | [04-soft-skills/soft-skills.md](04-soft-skills/soft-skills.md) | Поведенческие вопросы, STAR, конфликты |
 | **Кейсы** | [05-cases/practical-cases.md](05-cases/practical-cases.md) | Проектирование систем (system design для СА) |
 | | [05-cases/sql-tasks.md](05-cases/sql-tasks.md) | SQL-задачи с разбором решений |
+| | [05-cases/api-tasks.md](05-cases/api-tasks.md) | Практические задачи по API и интеграциям с решениями |
 | **Повторение** | [06-flashcards/flashcards.md](06-flashcards/flashcards.md) | Флеш-карточки вопрос → ответ |
 | | [06-flashcards/checklists.md](06-flashcards/checklists.md) | Чек-листы готовности |
+| **Тесты** | [07-tests/test-api.md](07-tests/test-api.md) | Тест по API и интеграциям — 25 вопросов с ответами |
+| | [07-tests/test-all.md](07-tests/test-all.md) | Итоговый тест по всем темам — 40 вопросов с ответами |
 
 ---
 
@@ -49,11 +52,13 @@
 
 1. **Сначала прочитай** [00-process/interview-stages.md](00-process/interview-stages.md) — поймёшь, что вообще ждёт на каждом этапе.
 2. **Составь план** по [00-process/roadmap.md](00-process/roadmap.md) — отметь свой грейд.
-3. **Проходи теорию → технологии → кейсы.** В каждом файле вопросы помечены грейдом:
+3. **Проходи теорию → технологии → кейсы → практические задачи.** В каждом файле вопросы помечены грейдом:
    - 🟢 — Junior (база, ожидают от всех)
    - 🟡 — Middle (основной массив вопросов рынка)
    - 🔴 — Senior/Lead (архитектура, трейд-оффы, лидерство)
-4. **За день до собеса** прогони [06-flashcards/](06-flashcards/) и чек-листы.
+4. **Практика:** решай задачи в [05-cases/api-tasks.md](05-cases/api-tasks.md) и [05-cases/sql-tasks.md](05-cases/sql-tasks.md) руками, закрыв решение.
+5. **Тесты:** пройди [07-tests/test-api.md](07-tests/test-api.md) и [07-tests/test-all.md](07-tests/test-all.md) — оцени готовность.
+6. **За день до собеса** прогони [06-flashcards/](06-flashcards/) и чек-листы.
 
 ---
 
